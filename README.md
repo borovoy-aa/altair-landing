@@ -11,4 +11,4 @@
 
 * Склонировать данный репозиторий
 
-> git clone https://github.com/borovoy-aa/goodgood.git
+> git clone https://github.com/borovoy-aa/altair-landing.git
