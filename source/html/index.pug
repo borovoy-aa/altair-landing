@@ -1,0 +1,190 @@
+extends ../layouts/page.pug
+
+block title
+  title Altair
+
+block content
+  section.section-heading
+    img.section-heading__background-mounts.img-responsive(src="../images/heading-mountains.png", alt="")
+    .container
+      .row
+        .col-md-12
+          .section-heading__head-logo
+            img.img-responsive(src="../images/heading-top.png", alt="heading-logotype")
+          .section-heading__devices
+            img.img-responsive(src="../images/heading-devices.png", alt="")
+  
+  section.section-latest-work
+    .container.section-latest-work__container
+      .row
+        .col-md-12
+          .section-latest-work__head.top-head
+            img.img-responsive(src="../images/work-head.png", alt="")
+
+      .owl-carousel.owl-theme.first-owl
+        .item
+          .container
+            .row
+              .col-md-4
+                .brilliant-wrap
+                  h4.brilliant-wrap__subtitle.subtitle--small brrrilliant
+                  p.brilliant-wrap__subinfo This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibenduim auctor, nisi elit consequat ipsum, nsagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet.
+                  .brilliant-wrap__items
+                    a(href="#")
+                      span
+                        i.fas.fa-trophy.span-logo
+                        | trophy
+                    a(href="#")
+                      span
+                        i.fas.fa-list-ul.span-logo
+                        | list items
+                    a(href="#")
+                      span
+                        i.fas.fa-star.span-logo
+                        | rating
+              .col-md-4
+                .iphone-wrap
+                  img.iphone-wrap__img.img-responsive(src="../images/work-iphone.png", alt="")
+              .col-md-4
+                .tech-wrap
+                  h4.tech-wrap__subtitle.subtitle--small technologies used
+                  .tech-wrap__tech-block.tech-block
+                    i.fab.fa-html5.tech-block__icon
+                    p html5
+                  .tech-wrap__tech-block.tech-block
+                    i.fab.fa-css3.tech-block__icon
+                    p css3
+                  .tech-wrap__tech-block.tech-block
+                    i.fab.fa-android.tech-block__icon
+                    p android
+                  a.tech-wrap__link(href="#") view gallery
+                    i.fas.fa-angle-right
+        .item
+          .container
+            .row
+              .col-md-4
+                .brilliant-wrap
+                  h4.brilliant-wrap__subtitle.subtitle--small brrrilliant
+                  p.brilliant-wrap__subinfo This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibenduim auctor, nisi elit consequat ipsum, nsagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet.
+                  .brilliant-wrap__items
+                    a(href="#")
+                      span
+                        i.fas.fa-trophy.span-logo
+                        | trophy
+                    a(href="#")
+                      span
+                        i.fas.fa-list-ul.span-logo
+                        | list items
+                    a(href="#")
+                      span
+                        i.fas.fa-star.span-logo
+                        | rating
+              .col-md-4
+                .iphone-wrap
+                  img.iphone-wrap__img.img-responsive(src="../images/work-iphone.png", alt="")
+              .col-md-4
+                .tech-wrap
+                  h4.tech-wrap__subtitle.subtitle--small technologies used
+                  .tech-wrap__tech-block.tech-block
+                    i.fab.fa-html5.tech-block__icon
+                    p html5
+                  .tech-wrap__tech-block.tech-block
+                    i.fab.fa-css3.tech-block__icon
+                    p css3
+                  .tech-wrap__tech-block.tech-block
+                    i.fab.fa-android.tech-block__icon
+                    p android
+                  a.tech-wrap__link(href="#") view gallery
+                    i.fas.fa-angle-right
+                    
+      .slider_nav
+        button.prev
+          span previous project
+        .counter-wrap#debug
+          | 0
+          span.current 
+          | /
+          span.total 
+          
+        button.next
+          span next project
+        
+  section.section-how-work
+    img.section-how-work__background-city.img-responsive(src="../images/how-work-city.png", alt="")
+    .container
+      .row
+        .col-md-12
+          .section-how-work__head.top-head
+            img.img-responsive(src="../images/how-work-top.png", alt="")
+      .row
+        .col-md-4
+          .section-how-work__work-plan
+            i.far.fa-lightbulb.plan-icon
+            h3 plan
+            p This is Photoshop's version  of Lorem Ipsum. Proin nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibenduim auctor, nisi elit consequat ipsum sem nibh id elit. Duis sed odio sit amet nibh vulputate
+        .col-md-4
+          .section-how-work__work-plan
+            i.fas.fa-cogs.plan-icon
+            h3 action
+            p This is Photoshop's version  of Lorem Ipsum. Proin nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibenduim auctor, nisi elit consequat ipsum sem nibh id elit. Duis sed odio sit amet nibh vulputate  cursus a sit amet.
+        .col-md-4
+          .section-how-work__work-plan
+            i.fas.fa-rocket.plan-icon
+            h3 launch
+            p This is Photoshop's version  of Lorem Ipsum. Proin nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibenduim auctor, nisi elit consequat ipsum sem nibh id elit. Duis sed odio sit amet
+      .row
+        .col-md-12
+          button.btn.button.button--red work with us!
+
+  section.section-blog-posts
+    .container-fluid
+      .row
+        .col-md-12
+          .section-blog-posts__head.top-head
+            img.img-responsive(src="../images/blog-posts-top.png", alt="Blog")
+
+    .owl-carousel.owl-theme.second-owl
+      .owl-item
+        .col-md-12
+          .blog-post
+            img.blog-post__post-img(src="../images/blog-img.jpg", alt="")
+            h5.blog-post__post-author BY TOMMY GRIFFIN
+            h4.blog-post__blog-topic Hollywood’s latest trend comes Underfire
+            span
+              i.fas.fa-chevron-circle-right
+              a(href="#") Read Article
+      .owl-item
+        .col-md-12
+          .blog-post
+            img.blog-post__post-img(src="../images/blog-img.jpg", alt="")
+            h5.blog-post__post-author BY SPENCER BLANKENSHIP
+            h4.blog-post__blog-topic Hollywood’s latest trend comes Underfire
+            span
+              i.fas.fa-chevron-circle-right
+              a(href="#") Read Article
+      .owl-item
+        .col-md-12
+          .blog-post
+            img.blog-post__post-img(src="../images/blog-img.jpg", alt="")
+            h5.blog-post__post-author BY TOMMY GRIFFIN
+            h4.blog-post__blog-topic Hollywood’s latest trend comes Underfire
+            span
+              i.fas.fa-chevron-circle-right
+              a(href="#") Read Article
+      .owl-item
+        .col-md-12
+          .blog-post
+            img.blog-post__post-img(src="../images/blog-img.jpg", alt="")
+            h5.blog-post__post-author BY SPENCER BLANKENSHIP
+            h4.blog-post__blog-topic Hollywood’s latest trend comes Underfire
+            span
+              i.fas.fa-chevron-circle-right
+              a(href="#") Read Article
+
+    input#r1(type="range", min="1", max="100", value="0")
+    p#one
+
+
+
+            
+block scripts
