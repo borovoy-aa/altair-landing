@@ -16,23 +16,21 @@ $( document ).ready(function() {
     });
     
     $('.second-owl').owlCarousel({
-        loop: true,
+        loop: false,
         margin: 0,
         nav:false,
         responsive:{
             0:{
+                items: 1
+            },
+            600:{
+                items:4
+            },
+            1000:{
                 items:4
             }
         },
     });
-
-    
-    // var rng = document.getElementById('r1');
-    // owl2.owlCarousel();
-
-    // rng.addEventListener('input', function(){
-    //         rng.value = owl2.event.index
-    // }, false);
 
     var owl2 = $('.second-owl');
     var rng = $('#r1');
@@ -42,6 +40,19 @@ $( document ).ready(function() {
         owl2.trigger('to.owl.carousel', rng.val());
     })
 
+    
+    var allItems = $('.second-carousel-item');
+    var visItem = $('.section-blog-posts .owl-item.active');
+    var itemL = (allItems.length / visItem.length) - 1;
+    rng.prop('max', itemL);
+
+    owl2.on('resized.owl.carousel', function(){
+        var visItem = $('.section-blog-posts .owl-item.active');
+        var itemL = (allItems.length / visItem.length) - 1;
+        rng.prop('max', itemL);
+       console.log(itemL)
+    });
+    
 
     var owl=$(".first-owl");
 	owl.owlCarousel();
